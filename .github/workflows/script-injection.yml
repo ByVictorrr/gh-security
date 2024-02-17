@@ -13,7 +13,7 @@ jobs:
           TITLE: ${{ github.event.issue.title }}
         run: |
           # essentially looks like a shell script
-          if [[ "$issue_title" == *"bug"* ]]; then
+          if [[ "$TITLE" == *"bug"* ]]; then
           echo "Issue is about a bug!"
           else
           echo "Issue is not about a bug"
